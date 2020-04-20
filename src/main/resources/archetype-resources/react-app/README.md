@@ -11,6 +11,11 @@ In the project directory, you can run the following commands:
 
 ${hash}${hash}${hash} `npm start`
 
+If you are getting error like `npm ERR! Failed at the react-app@1.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+`
+Run command `npm install` and then after `npm start`
 Runs the app in development mode by proxying the JSON model from a local AEM instance running at http://localhost:4502. This assumes that the entire project has been deployed to AEM at least once (`mvn clean install -PautoInstallPackage` **in the project root**).
 
 After running `npm start` **in the `react-app` directory**, your app will be automatically opened in your browser (at path http://localhost:3000/content/${projectName}/en/home.html). If you make edits, the page will reload.
